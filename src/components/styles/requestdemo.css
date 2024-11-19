@@ -1,0 +1,28 @@
+/* PhoneInputStyles.css */
+.react-tel-input .flag-dropdown {
+    background-color: black !important; /* Background color for the flag dropdown */
+     /* Optional: Text color within the flag dropdown */
+    border:none;
+    
+}
+.react-tel-input .flag-dropdown :hover{
+    background-color: black  !important;
+}
+
+
+/* Style for the dropdown list (where country codes appear) */
+.phone-input-dropdown .country-list {
+    background-color: black !important; /* Background color of the dropdown */
+}
+
+/* Style for each country option in the dropdown */
+.phone-input-dropdown .country {
+    background-color: black !important; /* Background color of the country options */
+    color: white !important; /* Text color for the country options */
+}
+
+/* Hover effect for country options */
+.phone-input-dropdown .country:hover {
+    background-color: gray !important; /* Background color on hover */
+}
+

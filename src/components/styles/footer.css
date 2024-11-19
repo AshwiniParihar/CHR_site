@@ -1,0 +1,111 @@
+.footer-logo {
+  position: absolute;
+  bottom: 0px; /* Positioned at the bottom */
+  left: 0px;   /* Positioned at the left-most side */
+  width: 400px; /* Increased size for the logo */
+  opacity: 0.3; /* Add some transparency if needed */
+  z-index: -1; /* Ensures it stays behind the text content */
+}
+
+.footer-heading, .footer-list, .social-links {
+  z-index: 10; /* Ensure footer content stays above the logo */
+}
+
+.footer {
+  position: relative;
+  padding-bottom: 50px;
+  width: 100%;
+  padding-left: 0px; /* Ensure no left padding in the footer */
+}
+   
+  .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+   
+  .footer-col {
+    width: 25%;
+    padding: 0 15px;
+  }
+   
+  .footer-heading {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+   
+  .footer-heading::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: linear-gradient(to right, #7076F2, #ba83ece8); 
+    height: 2px;
+    width: 50px;
+  }
+   
+  .footer-list {
+    list-style: none;
+  }
+   
+  .footer-link {
+    font-size: 16px;
+    color: #bbbbbb;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+  }
+   
+  .footer-link:hover {
+    color: #ffffff;
+    padding-left: 8px;
+  }
+   
+  .social-links {
+    display: flex;
+    gap: 10px;
+  }
+   
+  .social-icon {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+
+  .custom-hr {
+    border: none; /* Removes default border */
+    height: 1px;   /* Adjust thickness */
+    background-color: rgba(68, 65, 65, 0.842); /* Set custom color, e.g., red */
+    width: 100%;    /* Full width or adjust as needed */
+  }
+  
+   
+  .social-icon:hover {
+    color: #24262b;
+    background-color: #ffffff;
+  }
+   
+  /* Responsive Design */
+  @media (max-width: 767px) {
+    .footer-col {
+      width: 50%;
+      margin-bottom: 30px;
+    }
+  }
+   
+  @media (max-width: 574px) {
+    .footer-col {
+      width: 100%;
+    }
+  }
+   
