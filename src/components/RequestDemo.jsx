@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+// import axios from "axios";
 import ellipse from "../images/Ellipse 8.png";
-import toast from "react-hot-toast";
+// import toast from "react-hot-toast";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css"; // Import the CSS for the phone input
 import "../../src/components/styles/requestdemo.css";
@@ -20,9 +20,9 @@ export default function RequestDemo() {
     consent: false,
   });
 
-  const [errors, setErrors] = useState({});
+  // const [errors, setErrors] = useState({});
   const [formVisible] = useState(true);
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -33,90 +33,90 @@ export default function RequestDemo() {
     });
   };
 
-  const validate = () => {
-    const newErrors = {};
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const namePattern = /^[a-zA-Z ]+$/;
-    const companyPattern = /^[a-zA-Z0-9 ]+$/;
-    const phonePattern = /^\+?[0-9]{10,14}$/;
+  // const validate = () => {
+  //   const newErrors = {};
+  //   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  //   const namePattern = /^[a-zA-Z ]+$/;
+  //   const companyPattern = /^[a-zA-Z0-9 ]+$/;
+  //   const phonePattern = /^\+?[0-9]{10,14}$/;
 
-    if (!formData.firstName.trim()) {
-      newErrors.firstName = "First name is required.";
-    } else if (!namePattern.test(formData.firstName)) {
-      newErrors.firstName =
-        "First name should contain only alphabets and spaces.";
-    }
+  //   if (!formData.firstName.trim()) {
+  //     newErrors.firstName = "First name is required.";
+  //   } else if (!namePattern.test(formData.firstName)) {
+  //     newErrors.firstName =
+  //       "First name should contain only alphabets and spaces.";
+  //   }
 
-    if (!formData.lastName.trim()) {
-      newErrors.lastName = "Last name is required.";
-    } else if (!namePattern.test(formData.lastName)) {
-      newErrors.lastName =
-        "Last name should contain only alphabets and spaces.";
-    }
+  //   if (!formData.lastName.trim()) {
+  //     newErrors.lastName = "Last name is required.";
+  //   } else if (!namePattern.test(formData.lastName)) {
+  //     newErrors.lastName =
+  //       "Last name should contain only alphabets and spaces.";
+  //   }
 
-    if (!emailPattern.test(formData.email)) {
-      newErrors.email = "Please enter a valid email address.";
-    }
+  //   if (!emailPattern.test(formData.email)) {
+  //     newErrors.email = "Please enter a valid email address.";
+  //   }
 
-    if (!formData.phone) {
-      newErrors.phone = "Phone number is required.";
-    } else if (!phonePattern.test(formData.phone)) {
-      newErrors.phone =
-        "Phone number must be between 10 and 14 digits and may include a leading +.";
-    }
+  //   if (!formData.phone) {
+  //     newErrors.phone = "Phone number is required.";
+  //   } else if (!phonePattern.test(formData.phone)) {
+  //     newErrors.phone =
+  //       "Phone number must be between 10 and 14 digits and may include a leading +.";
+  //   }
 
-    if (!formData.jobTitle.trim()) {
-      newErrors.jobTitle = "Job title is required.";
-    } else if (!namePattern.test(formData.jobTitle)) {
-      newErrors.jobTitle =
-        "Job title should contain only alphabets and spaces.";
-    }
+  //   if (!formData.jobTitle.trim()) {
+  //     newErrors.jobTitle = "Job title is required.";
+  //   } else if (!namePattern.test(formData.jobTitle)) {
+  //     newErrors.jobTitle =
+  //       "Job title should contain only alphabets and spaces.";
+  //   }
 
-    if (!formData.company.trim()) {
-      newErrors.company = "Company name is required.";
-    } else if (!companyPattern.test(formData.company)) {
-      newErrors.company =
-        "Company name should contain only alphabets and numbers.";
-    }
+  //   if (!formData.company.trim()) {
+  //     newErrors.company = "Company name is required.";
+  //   } else if (!companyPattern.test(formData.company)) {
+  //     newErrors.company =
+  //       "Company name should contain only alphabets and numbers.";
+  //   }
 
-    if (!formData.consent) {
-      newErrors.consent =
-        "You must give consent to receive marketing material.";
-    }
+  //   if (!formData.consent) {
+  //     newErrors.consent =
+  //       "You must give consent to receive marketing material.";
+  //   }
 
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
+  //   setErrors(newErrors);
+  //   return Object.keys(newErrors).length === 0;
+  // };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (validate()) {
-      setLoading(true);
-      try {
-        const response = await axios.post(
-          "",
-          formData
-        );
-        toast.success(response.data.message);
-        setFormData({
-          firstName: "",
-          lastName: "",
-          email: "",
-          phone: "",
-          jobTitle: "",
-          company: "",
-          consent: false,
-        });
-      } catch (error) {
-        const errorMessage =
-          error.response?.data?.error ||
-          "An error occurred while submitting the form.";
-        toast.error(errorMessage);
-      } finally {
-        setLoading(false);
-      }
-    }
-  };
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   if (validate()) {
+  //     setLoading(true);
+  //     try {
+  //       const response = await axios.post(
+  //         "",
+  //         formData
+  //       );
+  //       toast.success(response.data.message);
+  //       setFormData({
+  //         firstName: "",
+  //         lastName: "",
+  //         email: "",
+  //         phone: "",
+  //         jobTitle: "",
+  //         company: "",
+  //         consent: false,
+  //       });
+  //     } catch (error) {
+  //       const errorMessage =
+  //         error.response?.data?.error ||
+  //         "An error occurred while submitting the form.";
+  //       toast.error(errorMessage);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   }
+  // };
 
   const handleClose = () => {
     navigate("/");
@@ -193,7 +193,7 @@ export default function RequestDemo() {
 
           <div className="w-full lg:w-5/6 mx-auto lg:mx-0">
             <form
-              onSubmit={handleSubmit}
+              // onSubmit={handleSubmit}
               className="space-y-4 p-4 sm:p-6 md:p-8 bg-opacity-80 bg-slate-800 rounded-lg border border-gray-500 relative z-0 lg:max-h-[85vh]"
             >
               <input
@@ -205,11 +205,11 @@ export default function RequestDemo() {
                 className="w-full p-2 sm:p-3 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
                 aria-describedby="firstNameError"
               />
-              {errors.firstName && (
+              {/* {errors.firstName && (
                 <p id="firstNameError" className="text-red-500 text-sm">
                   {errors.firstName}
                 </p>
-              )}
+              )} */}
 
               <input
                 type="text"
@@ -220,11 +220,11 @@ export default function RequestDemo() {
                 className="w-full p-2 sm:p-3 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
                 aria-describedby="lastNameError"
               />
-              {errors.lastName && (
+              {/* {errors.lastName && (
                 <p id="lastNameError" className="text-red-500 text-sm">
                   {errors.lastName}
                 </p>
-              )}
+              )} */}
 
               <input
                 type="email"
@@ -235,11 +235,11 @@ export default function RequestDemo() {
                 className="w-full p-2 sm:p-3 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
                 aria-describedby="emailError"
               />
-              {errors.email && (
+              {/* {errors.email && (
                 <p id="emailError" className="text-red-500 text-sm">
                   {errors.email}
                 </p>
-              )}
+              )} */}
 
               {/* Updated PhoneInput field */}
               <PhoneInput
@@ -255,11 +255,11 @@ export default function RequestDemo() {
                 dropdownClass="phone-input-dropdown" // Use your custom class
               />
 
-              {errors.phone && (
+              {/* {errors.phone && (
                 <p id="phoneError" className="text-red-500 text-sm">
                   {errors.phone}
                 </p>
-              )}
+              )} */}
 
               <input
                 type="text"
@@ -270,11 +270,11 @@ export default function RequestDemo() {
                 className="w-full p-2 sm:p-3 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
                 aria-describedby="jobTitleError"
               />
-              {errors.jobTitle && (
+              {/* {errors.jobTitle && (
                 <p id="jobTitleError" className="text-red-500 text-sm">
                   {errors.jobTitle}
                 </p>
-              )}
+              )} */}
 
               <input
                 type="text"
@@ -285,11 +285,11 @@ export default function RequestDemo() {
                 className="w-full p-2 sm:p-3 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
                 aria-describedby="companyError"
               />
-              {errors.company && (
+              {/* {errors.company && (
                 <p id="companyError" className="text-red-500 text-sm">
                   {errors.company}
                 </p>
-              )}
+              )} */}
 
               <label className="flex items-center">
                 <input
@@ -301,20 +301,21 @@ export default function RequestDemo() {
                 />
                 I consent to receiving marketing material.
               </label>
-              {errors.consent && (
+              {/* {errors.consent && (
                 <p className="text-red-500 text-sm">{errors.consent}</p>
-              )}
+              )} */}
 
               <div>
                 <div>
                   <button
                     type="submit"
-                    className={`w-full p-2 sm:p-3 bg-blue-400 text-white rounded-md hover:bg-blue-600 transition duration-200 ${
-                      loading ? "opacity-50 cursor-not-allowed" : ""
-                    }`}
-                    disabled={loading}
+                    className={`w-full p-2 sm:p-3 bg-blue-400 text-white rounded-md hover:bg-blue-600 transition duration-200
+                    `
+                  }
+                    // disabled={loading}
                   >
-                    {loading ? "Loading..." : "Contact Us"}
+                    {/* {loading ? "Loading..." : "Contact Us"} */}
+                    Contact Us
                   </button>
                 </div>
                 <div className="flex justify-center mt-7 mb-7">
