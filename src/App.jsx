@@ -57,7 +57,9 @@ import Pricing from "./components/Pricing";
 import RequestDemoPage from "./components/RequestDemo"; 
 import TermsOfUse from "./components/TermsOfUse";
 // import Faq from "./components/Faq";
-import FooterFAQ from "./components/FooterFaq";
+import FooterFAQ from "./components/FooterFAQ";
+
+
 import { Toaster } from 'react-hot-toast';
 
 const App = () => {
@@ -88,7 +90,7 @@ const App = () => {
           <Route path="/pricing" element={ <Pricing />} /> 
           <Route path="/terms-of-use" element={<TermsOfUse />} />
           {/* <Route path="/Faq" element={<Faq />} /> */}
-          <Route path="/footer-faq" element={<FooterFAQ />} />
+          <Route path="/footer-faq" element={<FooterFAQ/>} />
         </Routes>
       </div>
       
