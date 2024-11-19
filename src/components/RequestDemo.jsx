@@ -94,7 +94,7 @@ export default function RequestDemo() {
       setLoading(true);
       try {
         const response = await axios.post(
-          "http://localhost:5000/api/demo/request-demo",
+          "",
           formData
         );
         toast.success(response.data.message);
