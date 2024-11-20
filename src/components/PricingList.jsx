@@ -25,6 +25,9 @@ const PricingList = () => {
                 <div className="text-xl"></div>
                 
                 <div className={`leading-none font-bold ${item.id==="3"?"text-[2rem]":"text-[4rem]"}`}>
+                 <span className="text-xs">
+                 {item.minimun}
+                 </span>
                   {item.price}
                   <div className="text-sm p-2">
                   {item.credit}

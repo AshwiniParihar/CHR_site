@@ -58,6 +58,8 @@ import RequestDemoPage from "./components/RequestDemo";
 import TermsOfUse from "./components/TermsOfUse";
 // import Faq from "./components/Faq";
 import FooterFAQ from "./components/FooterFAQ";
+import Calculator from "./components/Calculator";
+
 
 
 import { Toaster } from 'react-hot-toast';
@@ -83,6 +85,7 @@ const App = () => {
                <AboutUs />
                {/* <Contact/>  */}
                <Footer />
+               
               </>
             } 
           />
@@ -91,6 +94,7 @@ const App = () => {
           <Route path="/terms-of-use" element={<TermsOfUse />} />
           {/* <Route path="/Faq" element={<Faq />} /> */}
           <Route path="/footer-faq" element={<FooterFAQ/>} />
+          <Route path="/cal" element={<Calculator/>} />
         </Routes>
       </div>
       

@@ -1,5 +1,5 @@
 
-import Calculator from '../components/CreditConsumptionCalculator'
+
 const CreditsComponent = () => {
   return (
     <div className="w-full max-w-2xl mx-auto text-white p-8 md:max-w-6xl">
@@ -39,7 +39,7 @@ const CreditsComponent = () => {
         <p className="text-sm text-gray-300 mt-4 text-center">*Subject to change.</p>
       </div>
      
-      <Calculator/>
+      
     </div>
    
   );

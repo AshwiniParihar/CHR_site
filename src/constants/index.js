@@ -117,6 +117,7 @@ export const pricing = [
     id: "0",
     title: "Starter",
     description: "Choose the Plan that Fits Your Hiring Needs and Budget",
+    minimun:"Min",
     price: " $499 ",
     credit:"($2 per credit)",
     features: [
@@ -133,8 +134,9 @@ export const pricing = [
     id: "1",
     title: "Growth",
     description: "Choose the Plan that Fits Your Hiring Needs and Budget",
+    minimun:"Min",
     price: "$1899 ",
-    credit:"($2 per credit)",
+    credit:"($1.9 per credit)",
     features: [
       "1000 Credits",
       "30 days Free Onboarding Support",
@@ -149,8 +151,9 @@ export const pricing = [
     id: "2",
     title: "Scale",
     description: "Choose the Plan that Fits Your Hiring Needs and Budget",
+    minimun:"Min",
     price: "$3299 ",
-    credit:"($2 per credit)",
+    credit:"($1.8 per credit)",
     features: [
       "3500 Credits",
       "30 days Free Onboarding Support",
@@ -184,16 +187,16 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Enhanced Employer Experience",
-    text: "With minimum human efforts and user-friendly interface makes applying, tracking, and engaging with the recruitment process effortless.",
+    title: "AI-Powered Candidate Ranking",
+    text: "Automates resume screening and ranks candidates with precision, ensuring the most qualified talent is identified.",
   
     icon: faUser, // Pass the icon object
     imageUrl: [aboutImage,card]
   },
   {
     id: "1",
-    title: "One Stop Solution for all Rounds",
-    text: "CV Scanning, AI Screening, Ranking, Prebuilt Test, Audio interview, video interviews till final round – Everything within few clicks",
+    title: "Streamlined Personality Screening",
+    text: "Leverages video and audio screenings to assess personality fit, delivering deeper candidate insights.",
  
     icon: faLightbulb,
     imageUrl: [aboutImage,card],
@@ -201,16 +204,16 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "Reduction in Resume Noise ",
-    text: "Minimize resume clutter and ensure no top candidate gets overlooked in the pool of applications.",
+    title: "Comprehensive Hiring Workflow ",
+    text: "From CV Scanning, AI Screening, Ranking, Prebuilt Test, Audio & video interviews till the final round every hiring stage with an integrated, all-in-one solution.",
     
     icon: faHandshake,
     imageUrl: [aboutImage,card],
   },
   {
     id: "3",
-    title: "Cost Saving (Credit Basis)",
-    text: "Predictable costs, paired with a flexible credit system, offer an efficient and scalable solution to meet your hiring needs effectively.",
+    title: "Reduction in Resume Noise",
+    text: "Minimizes clutter in applications and ensures no top candidate is overlooked in the pool.",
    
     icon: faMoneyBillAlt,
     imageUrl: [aboutImage,card],
@@ -218,16 +221,16 @@ export const benefits = [
   },
   {
     id: "4",
-    title: "Ease of communication ",
-    text: "Minimal manual interaction is achieved with automated emails, ensuring smooth communication with candidates.",
+    title: "Time and Cost Efficiency",
+    text: "Cuts manual tasks by up to 90%, saving significant time through automation while offering flexible, credit-based cost solutions.",
     
     icon: faEnvelope,
     imageUrl: [aboutImage,card],
   },
   {
     id: "5",
-    title: "Time-Saving Automation",
-    text: "Auto set emails and pre built automated tests saves time of continues interaction and allows candidates to complete the process as per their convivence",
+    title: "Seamless Communication",
+    text: "Automates candidate communication with personalized emails, ensuring a smooth and professional hiring experience.",
     
     icon: faClock,
     imageUrl: [aboutImage,card],
